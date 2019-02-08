@@ -1,13 +1,16 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.hiteshsahu.cool_keyboard"
         minSdkVersion 17
-        targetSdkVersion 27
+        targetSdkVersion 28
         vectorDrawables.useSupportLibrary = true
         versionCode 1
         versionName "0.1"
@@ -22,10 +25,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:27.0.2'
-    compile 'com.plattysoft.leonids:LeonidsLib:1.3.1'
-    compile 'com.github.bumptech.glide:glide:3.8.0'
-    compile 'com.android.support:design:27.0.2'
-    compile 'com.jakewharton:butterknife:8.8.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.plattysoft.leonids:LeonidsLib:1.3.1'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

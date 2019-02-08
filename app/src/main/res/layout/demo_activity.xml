@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/app_root"
+    android:id="@+id/appRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cyan">
@@ -25,7 +25,7 @@
             app:titleTextColor="@color/white" />
 
         <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
+            android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -40,7 +40,7 @@
 
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+        android:id="@+id/demoPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="?attr/actionBarSize"
@@ -72,7 +72,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/acc_Value"
+                android:id="@+id/accValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -85,7 +85,7 @@
                 android:id="@+id/acc_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acc_Value"
+                android:layout_below="@+id/accValue"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -95,10 +95,10 @@
                 android:textStyle="bold" />
 
             <SeekBar
-                android:id="@+id/accSeekBar"
+                android:id="@+id/accelarationBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acc_Value"
+                android:layout_below="@+id/accValue"
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@+id/acc_label"
                 android:gravity="center_vertical"
@@ -106,10 +106,10 @@
                 android:progress="13" />
 
             <TextView
-                android:id="@+id/rotnValue"
+                android:id="@+id/rotationValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/accSeekBar"
+                android:layout_below="@+id/accelarationBar"
                 android:layout_margin="5dp"
                 android:text="@string/label_rotation"
                 android:textColor="#00FF00"
@@ -119,17 +119,17 @@
                 android:id="@+id/rotn_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rotnValue"
+                android:layout_below="@+id/rotationValue"
                 android:layout_margin="5dp"
                 android:text="@string/label_rotation"
                 android:textColor="#FFF"
                 android:textStyle="bold" />
 
             <SeekBar
-                android:id="@+id/rotnSeekBar"
+                android:id="@+id/rotationBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rotnValue"
+                android:layout_below="@+id/rotationValue"
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@+id/rotn_label"
                 android:gravity="center_vertical"
